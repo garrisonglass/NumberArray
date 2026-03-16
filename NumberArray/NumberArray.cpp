@@ -47,4 +47,16 @@ double NumberArray::getMin() const
 	}
 	return min;
 }
+//getMax
+double NumberArray::getMax() const
+{
+	double max = data[0];
+
+	for (int i = 1; i < size; i++)
+	{
+		if (data[i] > max)
+			max = data[i];
+	}
+	return max;
+}
 
