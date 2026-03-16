@@ -1,20 +1,35 @@
-// NumberArray.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// NumberArray.cpp : This file contains the 'main' function. 
 
 #include <iostream>
+#include "NumberArray.h"
+#include <random>
+
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	cout << "Number Array Test Program\n\n";
+	//Test 1: Default Constructor
+	cout << "Default Constructor Test\n";
+	NumberArray a1;
+	a1.print();
+	//Test 2: Perameterized Constructor
+	cout << "\nPerameterized Constructor Test, size 10\n";
+	NumberArray a2(10);
+	a2.print();
+	//Test3: Random Number Test
+	cout << "\nRandom Number Test\n";
+
+	random_device rd;
+	mt19937 gen(rd());
+	uniform_real_distribution<> dis(1.0, 100.0);
+
+	for(int i= 0; i < a2.getSize(); i++)
+	{
+		a2.setNumber(i, dis(gen));
+	}
+	a2.print();
+	//test 4: Out of bounds test
+
+
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
