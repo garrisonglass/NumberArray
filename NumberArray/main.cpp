@@ -30,6 +30,23 @@ int main()
 	}
 	a2.print();
 	//test 4: Out of bounds test
+	cout << "\nOut of Bounds Test\n";
+	a2.setNumber(-10, 50.0);
+	a2.setNumber(500, 50.0);
 
+	cout << "GetNumber(-10): " << a2.getNumber(-10) << endl;
+	cout << "GetNumber(500): " << a2.getNumber(500) << endl;
+
+	//Test 5: Min, Max, Avg Test
+	cout << "\nStatisticl Test\n";
+
+	cout << "Min: " << a2.getMin() << endl;
+	cout << "Max: " << a2.getMax() << endl;
+	cout << "Avg: " << a2.getAvg() << endl;
+
+	//End of program
+	cout << "\nEnd of Program. Standby for destructor messages.\n";
+
+	return 0;
 
 }
