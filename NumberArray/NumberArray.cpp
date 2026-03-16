@@ -18,6 +18,7 @@ NumberArray::NumberArray(int size)
 NumberArray::~NumberArray()
 {
 	delete[] data;
+	cout << "Destructor called. Memory released.\n";
 }
 //Mutator: setNumber
 void NumberArray::setNumber(int index, double value)
