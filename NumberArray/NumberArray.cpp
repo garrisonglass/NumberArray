@@ -59,4 +59,21 @@ double NumberArray::getMax() const
 	}
 	return max;
 }
+//getAvg
+double NumberArray::getAvg() const
+{
+	double sum = 0.0;
+
+	for (int i = 0; i < size; i++)
+		sum += data[i];
+	return sum / size;
+}
+//print
+void NumberArray::print() const
+{
+	for (int i = 0; i < size; i++)
+		cout << data[i] << " ";
+
+	cout << endl;
+}
 

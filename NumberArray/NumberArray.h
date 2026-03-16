@@ -1,4 +1,5 @@
-#pragma once
+#ifndef NUMBERARRAY_H
+#define NUMBERARRAY_H
 
 #include <iostream>
 using namespace std;
@@ -23,4 +24,6 @@ public:
 	void print() const;
 	int getSize() const { return size; }
 };
+
+#endif
 
