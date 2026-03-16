@@ -45,7 +45,7 @@ int main()
 	cout << "Avg: " << a2.getAvg() << endl;
 
 	//End of program
-	cout << "\nEnd of Program. Standby for destructor messages.\n";
+	cout << "\nEnd of Program. Standby for destructor messages.\n\n";
 
 	return 0;
 
