@@ -1,6 +1,7 @@
 #include "NumberArray.h"
 
 // Constructor
+//Allocates a dynamic array of the specified size. If the size is less than or equal to 0, it defaults to MAX_SIZE.
 NumberArray::NumberArray(int size)
 {
 	if (size <= 0) 
