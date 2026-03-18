@@ -11,7 +11,7 @@ private:
 	int     size; //Number of elements in the array
 	double* data; //Pointer to dynamically allocated array
 
-	// Static default size used by the constructor
+	//Static default size used by the constructor
 	static const int MAX_SIZE = 100;
 
 public:
@@ -47,10 +47,10 @@ public:
 	double getMax() const;
 	double getAvg() const;
 
-	// Print function: displays all values in the array.
+	//Print function: displays all values in the array.
 	void print() const;
 
-	// Accessor for size: returns the number of elements in the array.
+	//Accessor for size: returns the number of elements in the array.
 	int getSize() const { return size; }
 };
 

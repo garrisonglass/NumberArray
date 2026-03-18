@@ -35,7 +35,7 @@ NumberArray::~NumberArray()
 /*
 Mutator: setNumber
 Stores a value at the given index only if the index is
-within valid bounds (0 ? index < size). Invalid indices are
+within valid bounds (0 <= index < size). Invalid indices are
 ignored to protect the array from out-of-bounds writes.
 */
 void NumberArray::setNumber(int index, double value)
